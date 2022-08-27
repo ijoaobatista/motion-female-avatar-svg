@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+svg {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(rgb(43, 43, 43), rgb(0, 0, 0));
+}
+
+#iris {
+  animation: iris 3s infinite backwards;
+}
+
+#sob-l {
+  animation: sob-l 4s infinite backwards;
+}
+
+#sob-r {
+  animation: sob-r 4s infinite backwards;
+}
+
+#nariz {
+  animation: nariz 3s infinite backwards;
+}
+
+#boca {
+  animation: boca 2.5s infinite backwards;
+}
+
+#olho {
+  animation: olho 3s infinite backwards;
+}
+
+#mecha {
+  animation: mecha 2s infinite backwards;
+}
+
+#mecha-2 {
+  animation: mecha-2 3s infinite backwards;
+}
+
+#mecha-3 {
+  animation: mecha-3 3s infinite backwards;
+}
+
+#cabeca {
+  animation: cabeca 7s infinite backwards;
+}
+
+@keyframes cabeca {
+  25% {
+    transform: rotate(0.2deg);
+  }
+
+  50% {
+    transform: rotate(-0.1deg);
+  }
+
+  75% {
+    transform: translateX(3px);
+  }
+
+  80% {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes mecha-3 {
+  25% {
+    transform: rotate(0.2deg);
+  }
+
+  50% {
+    transform: rotate(-0.1deg);
+  }
+}
+
+@keyframes mecha-2 {
+  25% {
+    transform: rotate(0.5deg);
+  }
+}
+
+@keyframes mecha {
+  25% {
+    transform: rotate(0.3deg);
+  }
+}
+
+@keyframes olho {
+  25% {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes boca {
+  25% {
+    transform: translateY(1px);
+  }
+
+  50% {
+    transform: rotate(0.1deg);
+  }
+
+  80% {
+    transform: rotate(-0.2deg);
+  }
+}
+
+@keyframes nariz {
+  25% {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes sob-l {
+  25% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes sob-r {
+  25% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes iris {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateX(2px);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+
+  60% {
+    transform: translateX(-2px);
+  }
+
+  75% {
+    transform: translateY(2px);
+  }
+}
